@@ -9,8 +9,6 @@
 angular.module("intuit", [])
     .controller('mainCtrl', MainCtrl)
 
-
-
 function MainCtrl( $scope ) {
 	$scope.incrementQuestion = incrementQuestion;
 	$scope.decrementQuestion = decrementQuestion;
@@ -33,6 +31,7 @@ function MainCtrl( $scope ) {
 			imgSrc : "https://turbotax.intuit.com/experiences/rtb-pods/images/icon-audit-support-retina.a68b2663.png"				
 		}
 	];
+	$scope.loaded = true;
 	$scope.questions = questions;	
 
 	function incrementQuestion() {

@@ -83,7 +83,9 @@
                     </div>
                 </form>
                 <div id="img-wrap" class="col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{questions[iterator].imgSrc}}"  />
+                    <div ng-if="loaded">
+                        <img src="img/loading.gif" ng-src="{{questions[iterator].imgSrc}}"  />
+                    </div>
                 </div>
             </div>
             <div ng-show="iterator == 3">
